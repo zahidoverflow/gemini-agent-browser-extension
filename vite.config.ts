@@ -13,6 +13,7 @@ export default defineConfig({
                 sidebar: resolve(__dirname, 'src/ui/sidebar/index.html'),
                 popup: resolve(__dirname, 'src/ui/popup/index.html'),
                 options: resolve(__dirname, 'src/ui/options/index.html'),
+                setup: resolve(__dirname, 'src/ui/setup/index.html'),
             },
             output: {
                 entryFileNames: 'assets/[name].js',
