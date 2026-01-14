@@ -3,6 +3,11 @@
     "name": "Gemini Agent Extension",
     "version": "1.0.0",
     "description": "A modern AI-powered browser assistant.",
+    "icons": {
+        "16": "icons/icon16.svg",
+        "48": "icons/icon48.svg",
+        "128": "icons/icon128.svg"
+    },
     "permissions": [
         "storage",
         "activeTab",

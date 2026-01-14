@@ -27,4 +27,26 @@ if (fs.existsSync(manifestSrc)) {
     process.exit(1);
 }
 
+// Copy public folder (icons, etc.)
+const publicDir = path.resolve(__dirname, '../public');
+const distPublicDir = distDir;
+
+if (fs.existsSync(publicDir)) {
+    const files = fs.readdirSync(publicDir, { recursive: true, withFileTypes: true });
+    for (const file of files) {
+        if (file.isFile()) {
+            const relativePath = path.relative(publicDir, path.resolve(file.path, file.name));
+            const destPath = path.resolve(distPublicDir, relativePath);
+            const destDir = path.dirname(destPath);
+
+            if (!fs.existsSync(destDir)) {
+                fs.mkdirSync(destDir, { recursive: true });
+            }
+
+            fs.copyFileSync(path.resolve(file.path, file.name), destPath);
+        }
+    }
+    console.log('Copied public assets to dist');
+}
+
 console.log('Build complete.');
