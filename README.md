@@ -1,5 +1,12 @@
 # Gemini Agent Browser Extension
 
+![License](https://img.shields.io/github/license/zahidoverflow/gemini-agent-browser-extension)
+![CI](https://github.com/zahidoverflow/gemini-agent-browser-extension/actions/workflows/ci.yml/badge.svg)
+![GitHub issues](https://img.shields.io/github/issues/zahidoverflow/gemini-agent-browser-extension)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/zahidoverflow/gemini-agent-browser-extension)
+![GitHub top language](https://img.shields.io/github/languages/top/zahidoverflow/gemini-agent-browser-extension)
+![GitHub last commit](https://img.shields.io/github/last-commit/zahidoverflow/gemini-agent-browser-extension)
+
 A modern AI-powered browser assistant/agent extension built with React, Vite, and TypeScript (Manifest V3).
 
 ## Features
